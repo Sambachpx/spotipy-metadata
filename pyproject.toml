@@ -1,0 +1,20 @@
+[project]
+name = "spotipy-metadata"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Sambachpx", email = "113524274+Sambachpx@users.noreply.github.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi[standard]>=0.142.1",
+    "mutagen>=1.48.1",
+]
+
+[project.scripts]
+spotipy-metadata = "spotipy_metadata:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
